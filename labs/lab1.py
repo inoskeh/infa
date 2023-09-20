@@ -1,4 +1,4 @@
-import math
+from math import *
 def task1():
   x = float(input(""))
   y = float(input(""))
