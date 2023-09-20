@@ -1,9 +1,9 @@
 from math import *
 def task1():
-  x = float(input(""))
-  y = float(input(""))
-  z = float(input(""))
-  a = ((math.cos(x)*math.cos(y))/ (math.sin(x)*math.sin(y))) * ((math.log1p(x) * math.log1p(y))/(math.log1p(x) + math.log1p(y)))
-  b = math.log10(1 + x) - z**(1/4)*math.sqrt(x) + y**(1/3)
+  x = float(input("Введите значение переменной x"))
+  y = float(input("Введите значение переменной y"))
+  z = float(input("Введите значение переменной z"))
+  a = ((cos(x)*cos(y))/ (sin(x)*sin(y))) * ((log1p(x) * log1p(y))/(log1p(x) + log1p(y)))
+  b = log10(1 + x) - z**(1/4)*sqrt(x) + y**(1/3)
   print("Значение перменной a =",a)
   print("Значнние переменной b =",b)
