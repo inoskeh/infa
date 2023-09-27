@@ -26,8 +26,8 @@ def task4():
     p = float(input("Введите во сколько раз увеличиться радиус "))
     r = (3*V)/(4*pi)**(1/3)
     r_new = r * p
-    S_new = 4 * pi * (r_new**2)
-    print("Площадь поверхности нового шара = ",round(S_new,4))
+    S = 4 * pi * (r_new**2)
+    print("Площадь поверхности нового шара = ",round(S,4))
 
 def task5():
     v = float(input("Введите скорость тела "))
@@ -81,4 +81,4 @@ def task9():
     salary = float(input("Введите ежемесячную зарплату "))
     salaryDV = salary * 113/100
     print("Ежемесячная зарплата Геогрия до вычета составляет:", round(salaryDV,4))
-task7()
+task4()
