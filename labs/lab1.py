@@ -48,11 +48,11 @@ def task6():
     print("Объем конуса = ", round(V_con,4))
 
 def task7():
-    a = float(input("Введите значение коэфициента A "))
-    b = float(input("Введите значение коэфициента B "))
-    c = float(input("Введите значение коэфициента C "))
-    if (a >= -10) and (c <= 10):
-        D = (b**2 - (4*a*c))**1/2
+    a = float(input("Введите значение коэффициента A "))
+    b = float(input("Введите значение коэффициента B "))
+    c = float(input("Введите значение коэффициента C "))
+    if (a >= -10) and (b >= - 10) and (c >= -10) and (a <= 10) and (b <= 10) and (c <= 10):
+        D = (b**2 - (4*a*c))
         x1 = (-b + sqrt(D)) / (2 * a)
         x2 = (-b - sqrt(D)) / (2 * a)
     if D > 0:
@@ -80,5 +80,5 @@ def task8():
 def task9():
     salary = float(input("Введите ежемесячную зарплату "))
     salaryDV = salary * 113/100
-    print("Ежемесячная зарплата Геогрия до вычета составляет:", round(salaryDV,4))
-task4()
+    print("Ежемесячная зарплата Георгия до вычета составляет:", round(salaryDV,4))
+task9()
