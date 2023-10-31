@@ -81,4 +81,18 @@ def task9():
     salary = float(input("Введите ежемесячную зарплату "))
     salaryDV = salary * 113/100
     print("Ежемесячная зарплата Георгия до вычета составляет:", round(salaryDV,4))
+def task10():
+    x1 = int(input("Введите координаты x1 "))
+    y1 = int(input("Введите координаты y1 "))
+    x2 = int(input("Введите координаты x2 "))
+    y2 = int(input("Введите координаты y2 "))
+    x3 = int(input("Введите координаты x3 "))
+    y3 = int(input("Введите координаты y3 "))
+    x4 = int(input("Введите координаты x4 "))
+    y4 = int(input("Введите координаты y4 "))
+    ab = x4 - x1
+    cd = y2 - y1
+    s = (ab*cd)/2
+    print(round(s,4))
+
 task9()
