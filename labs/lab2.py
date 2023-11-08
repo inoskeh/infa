@@ -45,6 +45,26 @@ def task3():
     result = decimal_in_new_numeral_system(number,base)
     print(f"Результат: {result}")
 
+def task4():
+    x = float(input("Введите координату точки по x "))
+    y = float(input("Введите координату точки по y "))
+    one = (y>=-(2/3*x) - 3) and (y <= (-3*x) - 3) and (y <= 0.5*x + 0.5)
+    two = (y <= x + 2) and (y >= x + 1) and (y >= 0.5*x + 0.5) and (y <= 0.5*x + 2.5)
+    three = (y >= x + 2) and (y <= x + 5) and (y <= (-2*x) + 5) and (y >= (-2*x - 1))
+    four = ((x + 1)**2 + (y - 3)**2 <=4) and ((y <= -2*x - 1) or (y >= 2*x + 7))
+
+    figure = one or two or three or four
+    print(f"Точка лежит в левой области?-{figure}")
+
+    one = ((y >= -4) and (y <= 0.5 * x - 5) and (x <= 4)) or ((y >= -4) and (y <= -3 * x + 17) and (x >= 4) and (y <= x - 7))
+    two = ((y >= x - 7) and (x >= 6) and (y <= 0)) or ((y >= 0) and (y <= -2.5 * x + 17.5) and (y >= -5 * x + 30))
+    three = (y >= x - 7) and (x <= 6) and (y <= -1.5 * x + 9) and (y >= -5 * x + 23)
+    four = ((y >= x - 7) and (x >= 4) and (y <= -2)) or ((y >= -2) and (y <= -x + 3) and (y >= -1.5 * x + 4))
+    five = ((x - 4)**2 + (y + 1)**2 <= 4) and (y <= 4) and (y <= -0.5 * x)
+
+    figure = one or two or three or four or five
+    print(f"Точка лежит в правой области? -{figure}")
+
 
 def task5():
     a = float(input("Введите значение а: "))
