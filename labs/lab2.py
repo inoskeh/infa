@@ -1,4 +1,7 @@
 from math import *
+import matplotlib
+import matplotlib.pyplot as plt
+
 def sqrt(n):
     if n >= 0 and int(n**(1/2))** 2 == n:
         return True
@@ -22,6 +25,20 @@ def task1():
         else:
             print(f"{n} не куб целого числа")
 
+
+def f(x):
+    if x >= 0:
+        return exp(x) + x
+    if x < 0:
+        return sin(x) + 1
+def task2():
+    i = -3
+    while i < 5:
+        i +=0.05
+        y = f(i)
+        print(round(y,4))
+
+
 def decimal_in_new_numeral_system(number,base):
     result = ''
     intp = int(number)
@@ -39,6 +56,7 @@ def decimal_in_new_numeral_system(number,base):
         frp -= digit
         pr -= 1
     return result
+
 def task3():
     number = float(input("Введите десятичное число: "))
     base = int(input("Введите систему счисления: "))
@@ -170,4 +188,4 @@ def task10():
 
     print("Вычесленное значение: ", round(sum,4))
 
-task3()
+task2()
