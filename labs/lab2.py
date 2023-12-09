@@ -36,7 +36,7 @@ def task2():
     while i < 5:
         i +=0.05
         y = f(i)
-        print(round(y,4))
+        print(round(i,4), round(y,4))
 
 
 def decimal_in_new_numeral_system(number,base):
@@ -109,7 +109,7 @@ def task6():
 
     print(f"новое количество бактерий спустя заданное время = {backterium(start_amount, minutes)}")
 
-def task8():
+def task7():
     n = int(input("Введите n: "))
     x = float(input("Введите x: "))
 
@@ -121,21 +121,22 @@ def task8():
         one += 2
         two += 3
 
-    print(f"S = {S}")
+    print(round(S,4))
     
-def task9():
+def task8():
     sum = 0  # создали переменную для суммы
     i = 1  # создали переменную-итератор
     while i < 9:
         j = 1
         sum1 = 0
-    while j < i + 1:
-        sum1 += (i - j) ** (1 / 3)
-        j += 1
+        while j < i + 1:
+            sum1 += (i - j) ** (1 / 3)
+            j += 1
         sum += sum1
         i += 1
 
-    print("sum = ",round(sum,4))
+    print("sum = ", round(sum,4))
+
     mul = 1
     i = 1
     while i < 6:
@@ -143,11 +144,11 @@ def task9():
         mul1 = 1
         while j < i + 1:
             mul1 *= j ** i
-            j+=1
-        i+=1
+            j += 1
+        i += 1
         mul *= mul1
 
-    print(f"mul = {mul}")
+    print("mul = ", round(mul, 4))
 
     mul = 1
     i = 1
@@ -164,9 +165,10 @@ def task9():
             j += 1
         mul *= sum
         i += 1
-    print(f"mul = {mul}")
 
-def task10():
+    print("mul = ", round(mul,4))
+
+def task9():
     def factorial(i):
         fact = i
         for i in range(1, i):
@@ -185,7 +187,8 @@ def task10():
     while (abs(sin(x) ** 2 - sum) > eps):
         sum += ((-1) ** (i + 1)) * ((2 ** (2 * i - 1)) / factorial(2 * i)) * (x ** (2 * i))
         i += 1
+        print(i)
 
     print("Вычесленное значение: ", round(sum,4))
 
-task2()
+task9()
