@@ -33,10 +33,17 @@ def f(x):
         return sin(x) + 1
 def task2():
     i = -3
+    i_v= []
+    y_v = []
     while i < 5:
         i +=0.05
         y = f(i)
+        i_v.append(i)
+        y_v.append(y)
         print(round(i,4), round(y,4))
+    plt.plot(i_v,y_v)
+    plt.grid()
+    plt.show()
 
 
 def decimal_in_new_numeral_system(number,base):
